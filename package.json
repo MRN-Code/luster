@@ -1,0 +1,12 @@
+{
+  "name": "coins-styles",
+  "version": "0.0.1",
+  "description": "Styles for COINS web applications.",
+  "main": "index.js",
+  "keywords": [
+    "coins",
+    "styles"
+  ],
+  "author": "Cory Reed <creed@mrn.org>",
+  "license": "MIT"
+}
