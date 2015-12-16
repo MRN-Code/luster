@@ -1,0 +1,22 @@
+# Site settings
+title: COINS Styles
+email: creed@mrn.org
+description: >
+  Styles for COINS website and applications.
+
+# Server
+baseurl: ""
+url: "https://mrn-code.github.io/"
+encoding: UTF-8
+
+# Build settings
+source: docs
+destination: _gh_pages
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  auto_ids: true
+
+permalinks: pretty

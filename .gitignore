@@ -1,0 +1,15 @@
+.DS_Store
+*.log
+node_modules
+dist
+.tmp
+.sass-cache
+
+# Jekyll stuff
+_gh_pages
+_site
+.jekyll-metadata
+.ruby-version
+.bundle
+vendor/cache
+vendor/bundle

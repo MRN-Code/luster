@@ -8,5 +8,27 @@
     "styles"
   ],
   "author": "Cory Reed <creed@mrn.org>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "chokidar-cli": "^1.1.1",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.4.1",
+    "postcss-cli": "^2.3.2",
+    "rimraf": "^2.4.3",
+    "uglify-js": "^2.5.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist .tmp",
+    "build": "npm run clean && npm run build:setup && npm run build:css",
+    "build:css": "npm run sass --silent -- scss/coins-styles.scss | npm run postcss -- -o dist/coins-styles.css",
+    "build:setup": "mkdirp dist .tmp",
+    "sass": "node-sass --include-path node_modules --source-map-embed",
+    "postcss": "postcss -u autoprefixer --autoprefixer.browsers 'last 2 versions'",
+    "watch:css": "npm run build:css && chokidar 'scss/**/*.scss' -c 'npm run build:css'",
+    "watch": "npm run watch:css"
+  }
 }

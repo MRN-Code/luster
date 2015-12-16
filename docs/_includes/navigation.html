@@ -1,0 +1,27 @@
+<nav id="navigation" class="coins-styles-navigation" role="navigation">
+    <ul>
+        <li class="{% if page.url contains 'getting-started' %}active{%endif%}">
+            <a href="{{ site.baseurl }}/getting-started/">Getting Started</a>
+        </li>
+        <li class="{% if page.url contains 'design' %}active{%endif%}">
+            <a href="{{ site.baseurl }}/design/color/">Design</a>
+            {% if page.url contains 'design' %}
+                <ul>
+                    <li><a href="{{ site.baseurl }}/design/color/">Color</li></a>
+                    <li><a href="{{ site.baseurl }}/design/layout/">Layout</li></a>
+                    <li><a href="{{ site.baseurl }}/design/typography/">Typography</li></a>
+                </ul>
+            {% endif %}
+        </li>
+        <li class="{% if page.url contains 'components' %}active{%endif%}">
+            <a href="{{ site.baseurl }}/components/buttons/">Components</a>
+            {% if page.url contains 'components' %}
+                <ul>
+                    <li><a href="{{ site.baseurl }}/components/buttons/">Buttons</a></li>
+                    <li><a href="{{ site.baseurl }}/components/button-group/">Button Group</a></li>
+                    <li><a href="{{ site.baseurl }}/components/button-dropdown/">Button Dropdown</a></li>
+                </ul>
+            {%endif%}
+        </li>
+    </ul>
+</nav>
