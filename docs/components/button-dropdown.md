@@ -3,12 +3,12 @@ layout: docs
 title: Button dropdown
 ---
 
-{% comment %} Replaced by kramdown’s table of contents {% endcomment %}
+* Replaced by kramdown’s table of contents
 {:toc}
 
 Easily create dropdown menus that are toggle-able with a button.
 
-{% highlight html %}
+{% example html %}
 <div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Action <span class="caret"></span>
@@ -21,7 +21,7 @@ Easily create dropdown menus that are toggle-able with a button.
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
-{% endhighlight %}
+{% endexample %}
 
 ## Further Documentation
 

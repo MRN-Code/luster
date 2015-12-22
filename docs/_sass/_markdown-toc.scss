@@ -1,0 +1,30 @@
+///
+/// Markdown TOC.
+///
+/// Styles for Kramdown's generated table of contents.
+///
+
+#markdown-toc {
+    background: $luster-gray-lighter;;
+    border: thin solid $luster-gray-light;
+    padding: .7em 0;
+    list-style: none;
+    margin: 0 0 1em;
+    padding: .7em 0;
+
+    @media (min-width: $luster-screen-sm) {
+        float: right;
+        margin: 0 0 1.5em 1.5em;
+        max-width: 14em;
+    }
+    @media (min-width: $luster-screen-sm) {
+
+    }
+
+    a {
+        color: $brand-primary;
+        display: block;
+        padding: .35em 1.4em;
+        text-decoration: none;
+    }
+}

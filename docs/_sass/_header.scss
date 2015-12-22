@@ -1,0 +1,28 @@
+.luster-header {
+    @media (min-width: $luster-screen-sm) {
+        height: 4em;
+        top: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 125%;
+        font-weight: 400;
+        margin: 0;
+
+        @media (min-width: $luster-screen-sm) {
+            a {
+                padding-top: .75em;
+            }
+        }
+    }
+    > a {
+        color: inherit;
+        display: block;
+        text-decoration: none;
+
+        @media (min-width: $luster-screen-sm) {
+            display: none;
+        }
+    }
+}

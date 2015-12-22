@@ -3,17 +3,17 @@ layout: docs
 title: Buttons
 ---
 
-{% comment %} Replaced by kramdown’s table of contents {% endcomment %}
+* Replaced by kramdown’s table of contents
 {:toc}
 
 Buttons are used to expose interaction to the user. You can use button classes on a variety of elements:
 
-{% highlight html %}
+{% example html %}
 <a class="btn btn-default" href="#" role="button">Link</a>
 <button class="btn btn-default" type="submit">Button</button>
 <input class="btn btn-default" type="button" value="Input">
 <input class="btn btn-default" type="submit" value="Submit">
-{% endhighlight %}
+{% endexample %}
 
 **Do not** use `input`s for buttons due to cross-browser styling issues. Instead, use a `button` with `type="submit"` or a regular `button` depending on the context.
 
@@ -21,7 +21,7 @@ Buttons are used to expose interaction to the user. You can use button classes o
 
 Buttons come in six variations:
 
-{% highlight html %}
+{% example html %}
 <button type="button" class="btn btn-default">Default</button>
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-success">Success</button>
@@ -29,7 +29,7 @@ Buttons come in six variations:
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-link">Link</button>
-{% endhighlight %}
+{% endexample %}
 
 ## Sizes
 
@@ -39,12 +39,12 @@ There are three button size variants in addition the default size:
 * `btn-sm`
 * `btn-xs`
 
-{% highlight html %}
+{% example html %}
 <button type="button" class="btn btn-default btn-lg">Large</button>
 <button type="button" class="btn btn-default">Large</button>
 <button type="button" class="btn btn-default btn-sm">Large</button>
 <button type="button" class="btn btn-default btn-xs">Large</button>
-{% endhighlight %}
+{% endexample %}
 
 ## jQuery UI
 

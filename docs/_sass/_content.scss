@@ -1,0 +1,13 @@
+///
+/// Content
+///
+
+.luster-content {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    @media (min-width: $luster-screen-sm) {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+}

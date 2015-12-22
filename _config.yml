@@ -1,8 +1,8 @@
 # Site settings
-title: COINS Styles
+title: Luster
 email: creed@mrn.org
 description: >
-  Styles for COINS website and applications.
+  Styles for COINS web applications.
 
 # Server
 baseurl: ""
