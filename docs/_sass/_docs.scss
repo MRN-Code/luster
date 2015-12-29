@@ -4,15 +4,14 @@
 /// Styles for the 'docs' layout.
 ///
 
-.docs {
+.luster-docs {
 
 }
 
-.docs-header {
-
+.luster-docs-header {
 }
 
-.docs-title {
+.luster-docs-title {
     border-bottom: thin solid $luster-gray-light;
     font-weight: 400;
     font-size: 225%;
@@ -21,9 +20,15 @@
     padding-bottom: .25em;
 }
 
-.docs-content {
+.luster-docs-content {
     > h2 {
         font-size: 175%;
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 1.25em 0 .5em;
+    }
+    > h3 {
+        font-size: 125%;
         font-weight: 700;
         line-height: 1.2;
         margin: 1.25em 0 .5em;

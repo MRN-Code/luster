@@ -1,6 +1,6 @@
 # Site settings
 title: Luster
-email: creed@mrn.org
+email: nidev@mrn.org
 description: >
   Styles for COINS web applications.
 
@@ -19,4 +19,4 @@ highlighter: rouge
 kramdown:
   auto_ids: true
 
-permalinks: pretty
+permalink: pretty

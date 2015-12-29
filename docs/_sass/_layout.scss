@@ -4,32 +4,46 @@
 /// Layout-specific classes for the style guide.
 ///
 
-$luster-navigation-width-sm: 14em;
-$luster-navigation-width-md: 16em;
+$luster-navigation-width-sm: 10em;
+$luster-navigation-width-md: 14em;
+$luster-navigation-width-lg: 18em;
 
 .luster-layout-sidebar {
     background: $luster-gray-lighter;
 
     @media (min-width: $luster-screen-sm) {
         border-right: thin solid $luster-gray-light;
+        padding-right: 0;
+        padding-left: 0;
         position: fixed;
         width: $luster-navigation-width-sm;
     }
     @media (min-width: $luster-screen-md) {
         width: $luster-navigation-width-md;
     }
+    @media (min-width: $luster-screen-lg) {
+        width: $luster-navigation-width-lg;
+    }
 }
 
 .luster-layout-main {
+    padding-right: 1em;
+    padding-left: 1em;
+
+    @media (min-width: $luster-screen-xs) {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
     @media (min-width: $luster-screen-sm) {
         margin-left: $luster-navigation-width-sm;
-        padding-right: 1.5em;
-        padding-left: 1.5em;
     }
     @media (min-width: $luster-screen-md) {
         margin-left: $luster-navigation-width-md;
-        max-width: 48em;
+    }
+    @media (min-width: $luster-screen-lg) {
+        margin-left: $luster-navigation-width-lg;
         padding-right: 3em;
         padding-left: 3em;
     }
 }
+

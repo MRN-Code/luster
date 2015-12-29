@@ -3,20 +3,30 @@
 ---
 @charset "utf-8";
 
+@import '../../scss/base/var';
+@import '../../scss/base/bootstrap-config';
+
 // Media Queries
-$luster-screen-sm: 24em !global;
-$luster-screen-md: 36em !global;
+$luster-screen-xs: 20em;
+$luster-screen-sm: 28em;
+$luster-screen-md: 38em;
+$luster-screen-lg: 44em;
 
 // Colors
-$luster-gray-light: #dcdcdc !global;
-$luster-gray-lighter: #f1f1f1 !global;
+$luster-brand-primary:    $brand-primary;
+$luster-gray:             $gray;
+$luster-gray-light:       $gray-light;
+$luster-gray-lighter:     $gray-lighter;
+$luster-link-color:       $link-color;
+$luster-link-hover-color: $link-hover-color;
 
-@import '../../scss/coins-styles';
-
+@import 'anchorjs';
 @import 'content';
 @import 'docs';
+@import 'example';
 @import 'footer';
 @import 'header';
 @import 'layout';
 @import 'markdown-toc';
 @import 'navigation';
+@import 'syntax-highlighting';

@@ -1,0 +1,75 @@
+///
+/// Buttons
+///
+/// Custom overrides for Bootstrap's buttons
+///
+
+$button-border-width: 2px;
+$button-focus-outline-width: 3px;
+
+.btn {
+    border-width: $button-border-width;
+
+    // Active state
+    &.active,
+    &:active {
+        box-shadow: none;
+    }
+
+    // Focused states
+    &:focus,
+    &.focus,
+    &:active:focus,
+    &:active.focus,
+    &.active:focus,
+    &.active.focus {
+        outline: none;
+    }
+}
+
+.btn-default {
+    &:hover {
+        background: mix($gray-lighter, $gray-light);
+    }
+    &:active,
+    &:focus,
+    &.active:focus,
+    &:active:focus {
+        background: $gray-light;
+    }
+}
+
+.btn-default,
+.btn-primary,
+.btn-link {
+    &:active,
+    &:focus,
+    &.active:focus,
+    &:active:focus {
+        box-shadow: 0 0 0 $button-focus-outline-width $gray;
+    }
+}
+
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    &:active,
+    &:focus,
+    &.active:focus,
+    &:active:focus {
+        box-shadow: 0 0 0 $button-focus-outline-width $gray-darker;
+    }
+}
+
+.btn-link {
+    border-radius: $border-radius-base;
+
+    &.btn-xs,
+    &.btn-sm {
+        border-radius: $border-radius-small;
+    }
+    &.btn-lg {
+        border-radius: $border-radius-large;
+    }
+}

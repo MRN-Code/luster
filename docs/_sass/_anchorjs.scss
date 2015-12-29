@@ -1,0 +1,16 @@
+///
+/// AnchorJS
+///
+/// Custom styles for anchor.js's heading anchors.
+///
+
+.anchorjs-link {
+    color: $luster-gray;
+
+    &:focus,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+}
+

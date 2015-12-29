@@ -1,9 +1,16 @@
-<footer class="luster-footer luster-layout-main" role="contentinfo">
-    <h2 class="footer-heading">{{ site.title }}</h2>
-    <div class="footer-col footer-col-3">
-      <p>{{ site.description }}</p>
+<footer class="luster-footer luster-layout-main clearfix" role="contentinfo">
+    <div class="luster-footer-description">
+        <a href="{{ site.baseurl }}/" rel="home">{{ site.title }}</a>
+        <p>{{ site.description }}</p>
     </div>
-    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    <div class="luster-footer-fine-print">
+        <small>&copy; 2015, The Mind Research Network.</small>
+        <small>Open sourced under the
+            <a href="https://github.com/MRN-Code/luster/blob/master/LICENSE">MIT
+            License</a>. Code available
+            <a href="https://github.com/MRN-Code/luster">on GitHub</a>.
+        </small>
+    </div>
 </footer>
 
 <!-- Google async webfonts loader -->
@@ -20,3 +27,6 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })(); </script>
+
+<script src="/dist/luster-docs.js" async="async"></script>
+

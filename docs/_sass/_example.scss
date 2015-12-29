@@ -1,0 +1,32 @@
+///
+/// Example and highlighted code blocks
+///
+
+.luster-example {
+    border: thin solid $luster-gray-lighter;
+    clear: both;
+    padding: 1em;
+
+    @media (min-width: $luster-screen-sm) {
+        padding: 1.5em;
+    }
+
+    + .highlight {
+        background: $luster-gray-lighter;
+        margin-bottom: 1em;
+        padding: 1em;
+
+        @media (min-width: $luster-screen-sm) {
+            margin-bottom: 1.5em;
+            padding: 1.5em;
+        }
+
+        pre {
+            background: transparent;
+            border-radius: 0;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

@@ -9,27 +9,38 @@
   ],
   "author": "Cory Reed <creed@mrn.org>",
   "license": "MIT",
-  "dependencies": {
-    "bootstrap-sass": "^3.3.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "anchor-js": "^2.0.0",
     "autoprefixer": "^6.1.0",
+    "bootstrap-sass": "^3.3.5",
+    "browser-sync": "^2.10.1",
     "chokidar-cli": "^1.1.1",
+    "exports-loader": "^0.6.2",
+    "jquery": "^2.1.4",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.4.1",
+    "parallelshell": "^2.0.0",
     "postcss-cli": "^2.3.2",
     "rimraf": "^2.4.3",
-    "uglify-js": "^2.5.0"
+    "uglify-js": "^2.5.0",
+    "webpack": "^1.12.9"
   },
   "scripts": {
-    "clean": "rimraf _gh_pages .sass-cache dist .tmp",
-    "build": "npm run clean && npm run build:setup && npm run build:css",
-    "build:css": "npm run sass --silent -- scss/coins-styles.scss | npm run postcss -- -o dist/coins-styles.css",
+    "clean": "rimraf .sass-cache dist .tmp",
+    "build": "npm run clean && npm run build:setup && npm run build:assets",
+    "build:assets": "parallelshell 'npm run build:css' 'npm run build:jekyll' 'npm run build:js'",
+    "build:css": "npm run sass --silent -- scss/luster.scss | npm run postcss -- -o dist/luster.css",
+    "build:jekyll": "jekyll build",
+    "build:js": "npm run webpack",
     "build:setup": "mkdirp dist .tmp",
     "sass": "node-sass --source-map-embed",
+    "serve": "npm run build:assets && parallelshell 'npm run watch' 'browser-sync start --config bs-config.js'",
     "postcss": "postcss -u autoprefixer --autoprefixer.browsers 'last 2 versions'",
-    "watch:css": "npm run build:css && chokidar 'scss/**/*.scss' -c 'npm run build:css'",
-    "watch": "npm run watch:css"
+    "watch:css": "chokidar 'scss/**/*.scss' -c 'npm run build:css'",
+    "watch:jekyll": "chokidar 'docs/**/*' -c 'npm run build:jekyll'",
+    "watch:js": "npm run webpack -- --watch",
+    "watch": "parallelshell 'npm run watch:css' 'npm run watch:jekyll' 'npm run watch:js'",
+    "webpack": "webpack --progress --colors"
   }
 }

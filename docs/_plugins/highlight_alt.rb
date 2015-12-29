@@ -53,9 +53,9 @@ eos
       end
 
       def example(output)
-        "<div class=\"bd-example\" data-example-id=\"#{@options[:id]}\">\n#{output}\n</div>"
+        "<div class=\"luster-example\" data-example-id=\"#{@options[:id]}\">\n#{output}\n</div>"
       end
-    
+
       def remove_holderjs(code)
         code = code.gsub(/data-src="holder.js.+?"/, 'src="..."')
       end

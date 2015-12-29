@@ -1,0 +1,64 @@
+///
+/// Pagination
+///
+
+.pagination {
+    @include clearfix;
+
+    > li {
+        border-color: $brand-primary;
+        border-style: solid;
+        border-width: $button-border-width 0;
+        display: inline-block;
+        float: left;
+
+        > a,
+        > span {
+            border-color: $gray-light;
+            border-width: 0 $button-border-width;
+            display: inline-block;
+            float: none;
+            margin-left: -1 * $button-border-width;
+
+            &:focus,
+            &:hover,
+            &:active {
+                border-color: $gray-light;
+            }
+        }
+
+        &:first-child {
+            border-left-width: $button-border-width;
+            border-radius: $border-radius-base 0 0 $border-radius-base;
+
+            > a,
+            > span {
+                border-left-width: 0;
+            }
+        }
+        &:last-child {
+            border-radius: 0 $border-radius-base $border-radius-base 0;
+            border-right-width: $button-border-width;
+
+            > a,
+            > span {
+                border-right-width: 0;
+            }
+        }
+    }
+
+    // Active
+    > .active {
+        > a,
+        > a:focus,
+        > a:hover,
+        > a:active,
+        > span,
+        > span:focus,
+        > span:hover {
+            background: $brand-primary;
+            color: $white;
+        }
+    }
+}
+

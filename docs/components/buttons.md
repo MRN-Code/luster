@@ -41,19 +41,68 @@ There are three button size variants in addition the default size:
 
 {% example html %}
 <button type="button" class="btn btn-default btn-lg">Large</button>
-<button type="button" class="btn btn-default">Large</button>
-<button type="button" class="btn btn-default btn-sm">Large</button>
-<button type="button" class="btn btn-default btn-xs">Large</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-default btn-sm">Small</button>
+<button type="button" class="btn btn-default btn-xs">Extra Small</button>
+{% endexample %}
+
+## Block Button
+
+Make a button take up the full width of its parent by adding the `btn-block` class:
+
+{% example html %}
+<button type="button" class="btn btn-default btn-block">Block Button</button>
+<button type="button" class="btn btn-primary btn-block">Block Button</button>
+{% endexample %}
+
+## States
+
+Buttons have a few states:
+
+### Active
+
+{% example html %}
+<button type="button" class="btn btn-primary active">Primary button</button>
+<button type="button" class="btn btn-default active">Button</button>
+{% endexample %}
+
+### Disabled
+
+Use the `disabled` property to add “disabled” styling to a `button` element:
+
+{% example html %}
+<button type="button" class="btn btn-primary" disabled="disabled">Disabled primary button</button>
+<button type="button" class="btn btn-default" disabled="disabled">Disabled default button</button>
+{% endexample %}
+
+Use the `disabled` class for anchors:
+
+{% example html %}
+<a href="#" class="btn btn-primary disabled">Disabled primary anchor</a>
+<a href="#" class="btn btn-default disabled">Disabled default anchor</a>
 {% endexample %}
 
 ## jQuery UI
 
-<div id="example-jquery-ui-button"></div>
+jQuery UI provides a proxy element for `a`, `button` or `input` tags.
+
+<div class="luster-example">
+    <button id="example-jquery-ui-button">Regular button</button>
+</div>
+
 {% highlight javascript %}
 var myButton = jQuery('#example-jquery-ui-button').button({
     label: 'jQuery UI Button'
 });
 {% endhighlight %}
+
+<script>
+jQuery(document).ready(function() {
+    var myButton = jQuery('#example-jquery-ui-button').button({
+        label: 'jQuery UI Button'
+    });
+});
+</script>
 
 ## Further Documentation
 

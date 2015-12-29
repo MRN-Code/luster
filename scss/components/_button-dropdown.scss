@@ -1,0 +1,26 @@
+///
+/// Button dropdown
+///
+
+.btn-group.open {
+
+    .dropdown-toggle {
+        box-shadow: none;
+    }
+}
+
+//TODO: Refactor into buttons module
+.open > .btn-default.dropdown-toggle {
+    &:hover,
+    &:focus,
+    &.focus {
+        background-color: $gray-light;
+    }
+}
+.dropdown-menu {
+    border-color: $gray-light;
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.15),
+        0 8px 16px rgba(0, 0, 0, 0.05);
+}
+

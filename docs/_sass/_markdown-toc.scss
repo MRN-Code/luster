@@ -7,24 +7,45 @@
 #markdown-toc {
     background: $luster-gray-lighter;;
     border: thin solid $luster-gray-light;
-    padding: .7em 0;
     list-style: none;
     margin: 0 0 1em;
-    padding: .7em 0;
+    padding: .25em 0;
 
     @media (min-width: $luster-screen-sm) {
-        float: right;
-        margin: 0 0 1.5em 1.5em;
-        max-width: 14em;
+        margin-bottom: 1.5em;
     }
-    @media (min-width: $luster-screen-sm) {
-
+    @media (min-width: $luster-screen-md) {
+        float: right;
+        max-width: 14em;
+        margin: 0 0 1.5em 1.5em;
+        padding: .75em 0;
+    }
+    @media (min-width: $luster-screen-lg) {
+        width: 15em;
     }
 
     a {
-        color: $brand-primary;
+        color: $luster-brand-primary;
         display: block;
-        padding: .35em 1.4em;
+        padding: .375em 1.5em .375em 2.25em;
         text-decoration: none;
+        text-indent: -.75em;
+
+        &:focus,
+        &:hover,
+        &:active {
+            color: $luster-link-hover-color;
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            padding-left: 3em;
+        }
     }
 }

@@ -1,0 +1,21 @@
+///
+/// Form
+///
+/// Customize forms and their elements' appearance.
+///
+
+label {
+    font-weight: 400;
+    margin-bottom: .5em;
+}
+
+.form-control {
+    border-color: $gray-darker;
+    border-width: $button-border-width;
+    box-shadow: none;
+
+    &:focus,
+    &.focus {
+        box-shadow: none;
+    }
+}
