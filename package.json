@@ -42,5 +42,13 @@
     "watch:js": "npm run webpack -- --watch",
     "watch": "parallelshell 'npm run watch:css' 'npm run watch:jekyll' 'npm run watch:js'",
     "webpack": "webpack --progress --colors"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRN-Code/luster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MRN-Code/luster/issues"
+  },
+  "homepage": "https://github.com/MRN-Code/luster#readme"
 }
