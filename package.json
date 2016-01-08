@@ -18,6 +18,7 @@
     "chokidar-cli": "^1.1.1",
     "exports-loader": "^0.6.2",
     "jquery": "^2.1.4",
+    "jquery-ui-bundle": "^1.11.4",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.4.1",
     "parallelshell": "^2.0.0",
