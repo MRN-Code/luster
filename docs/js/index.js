@@ -1,6 +1,6 @@
 'use strict';
 
-var anchors = require('exports?anchors!../../node_modules/anchor-js/anchor.js')
+var anchors = require('exports?anchors!../../node_modules/anchor-js/anchor.js');
 
 /**
  * Add anchors.
@@ -14,4 +14,3 @@ anchors.add([
     '.luster-docs-content > h5',
     '.luster-docs-content > h6',
 ].join(', '));
-
