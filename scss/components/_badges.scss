@@ -1,0 +1,11 @@
+///
+/// Badges
+///
+
+.breadcrumb > .active {
+    font-weight: 700;
+
+    &:before {
+        font-weight: 400;
+    }
+}

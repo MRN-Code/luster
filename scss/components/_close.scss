@@ -1,0 +1,14 @@
+///
+/// Close
+///
+
+.close {
+    opacity: 1;
+    text-shadow: none;
+
+    &:focus,
+    &:hover {
+        color: $gray-darker;
+        opacity: 1;
+    }
+}

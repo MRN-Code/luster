@@ -7,8 +7,12 @@
 @import 'base/var';
 @import 'base/bootstrap-config';
 @import 'base/bootstrap';
+
+@import 'components/alerts';
+@import 'components/badges';
 @import 'components/buttons';
 @import 'components/button-dropdown';
 @import 'components/button-group';
 @import 'components/form';
 @import 'components/pagination';
+@import 'components/close';

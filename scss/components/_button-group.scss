@@ -3,5 +3,5 @@
 ///
 
 .btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group {
-    margin-left: -1 * $button-border-width;
+    margin-left: -1 * $border-width;
 }

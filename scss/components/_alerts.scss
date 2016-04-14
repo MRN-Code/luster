@@ -1,0 +1,45 @@
+///
+/// Alerts
+///
+
+.alert {
+    border-width: $border-width;
+}
+
+// Dismissible close button
+.alert-dismissible {
+    $right: 2 * $alert-padding + $font-size-base;
+
+    padding-right: $right;
+
+    .close {
+        height: 2 * $alert-padding + $line-height-computed;
+        right: -1 * $right;
+        top: -1 * $alert-padding;
+        padding-right: $alert-padding;
+        padding-left: $alert-padding;
+    }
+}
+
+// Link
+.alert .alert-link {
+    text-decoration: underline;
+
+    &:focus,
+    &:hover,
+    &:active {
+        color: $gray-darker;
+    }
+}
+.alert-success .alert-link {
+    color: $state-success-text;
+}
+.alert-info .alert-link {
+    color: $state-info-text;
+}
+.alert-warning .alert-link {
+    color: $state-warning-text;
+}
+.alert-danger .alert-link {
+    color: $state-danger-text;
+}

@@ -4,11 +4,9 @@
 /// Custom overrides for Bootstrap's buttons
 ///
 
-$button-border-width: 2px;
-$button-focus-outline-width: 3px;
 
 .btn {
-    border-width: $button-border-width;
+    border-width: $border-width;
 
     // Active state
     &.active,
@@ -46,7 +44,7 @@ $button-focus-outline-width: 3px;
     &:focus,
     &.active:focus,
     &:active:focus {
-        box-shadow: 0 0 0 $button-focus-outline-width $gray;
+        box-shadow: 0 0 0 $focus-outline-width $gray;
     }
 }
 
@@ -58,7 +56,7 @@ $button-focus-outline-width: 3px;
     &:focus,
     &.active:focus,
     &:active:focus {
-        box-shadow: 0 0 0 $button-focus-outline-width $gray-darker;
+        box-shadow: 0 0 0 $focus-outline-width $gray-darker;
     }
 }
 

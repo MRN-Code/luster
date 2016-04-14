@@ -8,17 +8,17 @@
     > li {
         border-color: $brand-primary;
         border-style: solid;
-        border-width: $button-border-width 0;
+        border-width: $border-width 0;
         display: inline-block;
         float: left;
 
         > a,
         > span {
             border-color: $gray-light;
-            border-width: 0 $button-border-width;
+            border-width: 0 $border-width;
             display: inline-block;
             float: none;
-            margin-left: -1 * $button-border-width;
+            margin-left: -1 * $border-width;
 
             &:focus,
             &:hover,
@@ -28,7 +28,7 @@
         }
 
         &:first-child {
-            border-left-width: $button-border-width;
+            border-left-width: $border-width;
             border-radius: $border-radius-base 0 0 $border-radius-base;
 
             > a,
@@ -38,7 +38,7 @@
         }
         &:last-child {
             border-radius: 0 $border-radius-base $border-radius-base 0;
-            border-right-width: $button-border-width;
+            border-right-width: $border-width;
 
             > a,
             > span {
@@ -61,4 +61,3 @@
         }
     }
 }
-
